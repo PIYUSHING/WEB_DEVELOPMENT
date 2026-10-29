@@ -79,30 +79,30 @@
 
     <h2>Registration Page</h2>
 
-    <form>
+    <form onsubmit="return validate()"></form>
         <table>
             <!-- 1. Name -->
             <tr>
                 <td class="label">Name:</td>
-                <td><input type="text" name="name" required></td>
+                <td><input type="text" name="name" required id = "name"></td>
             </tr>
 
             <!-- 2. Password -->
             <tr>
                 <td class="label">Password:</td>
-                <td><input type="password" name="password" required></td>
+                <td><input type="password" name="password" required id = "password"></td>
             </tr>
 
             <!-- 3. E-mail id -->
             <tr>
                 <td class="label">E-mail id:</td>
-                <td><input type="text" name="email"></td>
+                <td><input type="text" name="email" id = "email"></td>
             </tr>
 
             <!-- 4. Phone number -->
             <tr>
                 <td class="label">Phone Number:</td>
-                <td><input type="text" name="phone"></td>
+                <td><input type="text" name="phone" id = "phone"></td>
             </tr>
 
             <!-- 5. Sex -->
@@ -192,6 +192,6 @@
             year.innerHTML += '<option value="' + y + '">' + y + "</option>";
         }
     </script>
-
+    <script src="validation.js"></script>
 </body>
 </html>
